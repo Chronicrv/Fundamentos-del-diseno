@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 
+
 <head>
 
 <title>Emergencia Médica</title>
+
+<link rel="stylesheet" href="form.css">
+
 <script>
 function validateForm()
 {
@@ -19,17 +23,17 @@ if (x==null || x=="")
 
 <body>
 
+<div class="forma">
 <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
 Emegencia:<input type="text" name="fname">
 <input type="submit" value="Submit">
 </form>
+<br>
 <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
-Locación (Estimada)<input type="text" name="fname">
-<input type="submit" value="Submit">
-<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
-Datos extra :<input type="text" name="fname">
-<input type="submit" value="Submit">
-</form>	
-</form>	
-	
+Detalles de la emergencia:<textarea rows="4" cols="50"> Escriba aquí los detalles de la emergencia. (OPCIONAL)
+</textarea><input type="submit" value="Submit">
+</form>
+</div>
+
+
 </body>
