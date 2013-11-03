@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Reporte</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css" />
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(20.66459,-103.328819),
+  zoom:10,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+ var mapProp2 = {
+  center:new google.maps.LatLng(20.644672,-103.330536),
+  zoom:7,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+	var map=new google.maps.Map(document.getElementById("googleMap")
+  ,mapProp);
+  
+  var map2=new google.maps.Map(document.getElementById("map")
+  ,mapProp2);
+}
+
+
+
+google.maps.event.addDomListener(window, 'load',initialize);
+
+</script>
+
+
+</head>
+<body>
+
+ <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="#">
+            Reporte
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+  </ul>
+ 
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+      <ul class="right">
+      <li class="divider"></li>
+      <li class="active"><a href="index.html">Inicio</a></li>
+      <li class="divider"></li>
+      <li class="divider"></li>
+      <li class="active"><a href="Reporte.html">Reporte</a></li>
+      <li class="divider"></li>
+      <li class="divider"></li>
+        <li class="has-dropdown">
+        <a href="emergency.html">Emergencia</a>
+        <ul class="dropdown">
+        <li><a href="#">Policia</a></li>
+        <li><a href="#">Medica</a></li>
+        <li><a href="#">Bomberos</a></li>
+        <li class="divider"></li>
+        </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Contacto</a>
+          <ul class="dropdown">
+            <li><a href="https://twitter.com/Trafico_ZMG">Twitter</a></li>
+            <li><a href="https://www.facebook.com/pages/GDL-Report/156590251211906?ref=br_tf">Facebook</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+  </section>
+</nav>
+ 
+  <!-- End Top Bar -->
+ 
+ 
+  <!-- Main Page Content and Sidebar -->
+  
+  </br>
+ 
+  <div class="row">
+ 
+    <!-- Contact Details -->
+    <div class="large-9 columns">
+ 
+      <h3>Reporte</h3>
+      
+      
+      <p>¡Gracias por reportar todos los incidentes que veas! Recuerda que si todos reportamos lo que sucede día a día podemos estar alertas y preparados para evitarlos de forma mas eficiente.</p>
+      <p>Esta forma te guiara para que puedas hacer un reporte completo y preciso ya sea vial o policiaco.</p>
+      <p>Recuerda que el reporte policiaco es solo para reportar casos externos a ti como un asalto a una tienda en la calle.</p>
+ 
+      <div class="section-container auto" data-section>
+        <section class="section">
+          <h5 class="title"><a href="#panel1">Reporte Vial</a></h5>
+          <div class="content" data-slug="panel1">
+            <form>
+              <div class="row collapse">
+                <div class="large-2 columns">
+                  
+                </div>
+                <div class="large-10 columns">
+                 <form class="custom">
+                      <label for="customDropdown">Tipo de Reporte</label>
+                      </div>
+                      <div class="large-10 columns">
+                      <select id="customDropdown">
+                        <option>Tráfico</option>
+                        <option>Accidente</option>
+                        <option>Cámara de alta velocidad</option>
+                        <option>Construcción</option>
+                        <option>Calle en reparación</option>
+                        <option>Calle bloqueada</option>
+                      </select>
+                    </form>
+                    
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="large-2 columns">
+                  <label class="inline"> ¿Dónde?</label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" id="Donde" placeholder="Av. Guadalupe y ....">
+                </div>
+              </div>
+              <label>Descripción</label>
+              <textarea rows="4"></textarea>
+              <button type="Reportar" class="radius button">Reportar</button>
+            </form>
+          </div>
+        </section>
+        <section class="section">
+          <h5 class="title"><a href="#panel1">Reporte Policiaco</a></h5>
+          <div class="content" data-slug="panel1">
+            <form>
+              <div class="row collapse">
+                <div class="large-2 columns">
+                  
+                </div>
+                <div class="large-10 columns">
+                 <form class="custom">
+                      <label for="customDropdown">Tipo de Reporte</label>
+                      </div>
+                      <div class="large-10 columns">
+                      <select id="customDropdown">
+                        <option>Asalto</option>
+                        <option>Armas de fuego (Disparos)</option>
+                        <option>Robo</option>
+                        <option>Extorsión</option>
+                      </select>
+                    </form>
+                    
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="large-2 columns">
+                  <label class="inline"> ¿Dónde?</label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" id="Donde" placeholder="Av. Guadalupe y ....">
+                </div>
+              </div>
+              <label>Descripción</label>
+              <textarea rows="4"></textarea>
+              <button type="Reportar" class="radius button">Reportar</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+ 
+    <!-- End Contact Details -->
+ 
+ 
+    <!-- Sidebar -->
+ 
+
+    <div class="large-3 columns">
+      <h5>Mapa</h5>
+      <!-- Clicking this placeholder fires the mapModal Reveal modal -->
+      <p>
+     
+        <p id="googleMap" style="width:400px;height:260px;"></p><br />
+        <a href="" data-reveal-id="mapModal">Ver mapa en grande</a>
+      </p>
+
+    </div>
+    <!-- End Sidebar -->
+  </div>
+ 
+  <!-- End Main Content and Sidebar -->
+ 
+ 
+  <!-- Footer -->
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright GDA  Report.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- End Footer -->
+ 
+ 
+ 
+  <!-- Map Modal -->
+ 
+  <div class="reveal-modal" id="mapModal">
+    <h4>Guadalajara</h4>
+    
+    <div id="map" style="width:1000px;height:450px;"></div>
+ 
+    <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+    
+  </div>
+
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>
