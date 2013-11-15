@@ -1,39 +1,33 @@
-
-  <!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>GDA REPORT - Llenar Reporte</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Feedback</title>
 
-  
-  <link rel="stylesheet" href="css/foundation.css">
-  <style type="text/css">
-  body,td,th {
-	font-family: "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
-}
-body {
-	background-color: #ffffff;
-}
-  </style>
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <!-- If you are using the gem version, you need this only -->
+  <link rel="stylesheet" href="css/app.css" />
+
   <script src="js/vendor/custom.modernizr.js"></script>
+  
+
 
 </head>
-
-
-
 <body>
-<!-- Navigation -->
- 
-<nav class="top-bar">
+
+ <nav class="top-bar">
     <ul class="title-area">
       <!-- Title Area -->
       <li class="name">
         <h1>
           <a href="#">
-            Bienvenidos a Gda Report
+            GDA Report
           </a>
         </h1>
       </li>
@@ -46,16 +40,10 @@ body {
       <li class="divider"></li>
       <li class="active"><a href="index.html">Inicio</a></li>
       <li class="divider"></li>
-        <li class="divider"></li>
-        <li class="has-dropdown">
-          <a href="#">Reporte</a>
-          <ul class="dropdown">
-            <li><a href="#">Vial (Choques)</a></li>
-            <li><a href="#">Policia</a></li>
-            <li class="divider"></li>
-          </ul>
-        </li>
-        <li class="divider"></li>
+      <li class="divider"></li>
+      <li class="active"><a href="Reporte.html">Reporte</a></li>
+      <li class="divider"></li>
+      <li class="divider"></li>
         <li class="has-dropdown">
         <a href="emergency.html">Emergencia</a>
         <ul class="dropdown">
@@ -71,7 +59,7 @@ body {
           <ul class="dropdown">
             <li><a href="https://twitter.com/Trafico_ZMG">Twitter</a></li>
             <li><a href="https://www.facebook.com/pages/GDL-Report/156590251211906?ref=br_tf">Facebook</a></li>
-            <li><a href="#">Feedback</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
             <li class="divider"></li>
           </ul>
         </li>
@@ -83,26 +71,33 @@ body {
  
  
   <!-- Main Page Content and Sidebar -->
+  
+  </br>
  
   <div class="row">
  
     <!-- Contact Details -->
     <div class="large-9 columns">
  
-      <h3>Llena tu reporte!</h3>
-      <p>Entendemos que tienes un problema para reportar, y nosotros nos encargaremos de lo demas, solo dejanos tu nombre, tu email y que es lo que sucedio, y tendras una respuesta en segundos sobre el tema.</p>
+      <h3>Feedback</h3>
+      
+      
+      <p>Entendemos que puedes tener una queja o sugerencia o felicitaciones que quieras hacernos llegar así que ponemos a tu disposición esta herramienta para que puedas ya sea contactar en general a la página  con alguna sugerencia o demás.</p>
+      <p>O inclusive puede que quieras contactarnos a alguno del equipo en específico.</p>
+      <p>Déjanos tu mensaje y tu correo y te contactaremos lo más pronto posible! :)</p>
+
  
-      <div class="section-container tabs" data-section>
+<div class="section-container tabs" data-section>
         <section class="section">
-          <h5 class="title"><a href="#panel1">Contactactanos de inmediato</a></h5>
+          <h5 class="title"><a href="#panel1">¡Contactanos!</a></h5>
           <div class="content" data-slug="panel1">
             <form>
               <div class="row collapse">
                 <div class="large-2 columns">
-                  <label class="inline">Tu Nombre</label>
+                  <label class="inline">Tu nombre</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourName" placeholder="Pablo Gomez">
+                  <input type="text" id="yourName" placeholder="Carlos Perez">
                 </div>
               </div>
               <div class="row collapse">
@@ -110,22 +105,23 @@ body {
                   <label class="inline"> Tu Email</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourEmail" placeholder="pablo_gomez@hotmail.com">
+                  <input type="text" id="yourEmail" placeholder="jane@smithco.com">
                 </div>
               </div>
-              <label>Tipo de Emergencia y Descripcion</label>
+              <label>Mensaje</label>
               <textarea rows="4"></textarea>
-              <button type="submit" class="radius button">Enviar</button>
+              <button type="submit" class="radius button">Submit</button>
             </form>
           </div>
         </section>
         <section class="section">
-          <h5 class="title"><a href="#panel2">Persona Especifica</a></h5>
+          <h5 class="title"><a href="#panel2">Persona en especifico</a></h5>
           <div class="content" data-slug="panel2">
             <ul class="large-block-grid-5">
-              <li><a href="https://www.facebook.com/marco.maza"><img src="C:\Users\PJ\Documents\GitHub\Fundamentos-del-diseno\img\MarcoContacto.png">Marco Maza</a></li>
-              <li><a href="https://www.facebook.com/RobbertoVC?fref=ts"><img src="C:\Users\PJ\Documents\GitHub\Fundamentos-del-diseno\img\RobertoContacto.png">Roberto Vasquez</a></li>
-              <li><a href="https://www.facebook.com/FerchuRubio?fref=ts"><img src="C:\Users\PJ\Documents\GitHub\Fundamentos-del-diseno\img\RubioContacto.png">Fernando Rubio</a></li>
+              <li><a href="mailto:tumama@gmail.com"><img src="https://scontent-a-dfw.xx.fbcdn.net/hphotos-ash2/405088_10150827803478153_1427766095_n.jpg">Roberto Vásquez</a></li>
+              <li><a href="mailto:tumama2@gmail.com"><img src="https://scontent-a-dfw.xx.fbcdn.net/hphotos-ash3/155819_462996538261_7750493_n.jpg">Marco Maza</a></li>
+              <li><a href="mailto:tumama3@gmail.com"><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/1238322_4722570162106_893466021_n.jpg">Fernando Rubio</a></li>
+             
             </ul>
           </div>
         </section>
@@ -137,18 +133,15 @@ body {
  
     <!-- Sidebar -->
  
- 
+
     <div class="large-3 columns">
       <h5>Mapa</h5>
       <!-- Clicking this placeholder fires the mapModal Reveal modal -->
       <p>
-        <a href="" data-reveal-id="mapModal"><img src="C:\Users\PJ\Documents\GitHub\Fundamentos-del-diseno\img\Mapa.png"></a><br />
+     
+        <a href="" data-reveal-id="mapModal"><img src="http://placehold.it/400x280"></a><br />
         <a href="" data-reveal-id="mapModal">View Map</a>
-      </p>
-      <p>
-        123 Awesome St.<br />
-        Barsoom, MA 95155
-      </p>
+
     </div>
     <!-- End Sidebar -->
   </div>
@@ -163,11 +156,11 @@ body {
       <hr />
       <div class="row">
         <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+          <p>&copy; Copyright GDA  Report.</p>
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
-            <li><a href="#">Que es GDA Report</a></li>
+
           </ul>
         </div>
       </div>
@@ -181,20 +174,23 @@ body {
   <!-- Map Modal -->
  
   <div class="reveal-modal" id="mapModal">
-    <h4>Where We Are</h4>
-    <p><img src="http://placehold.it/800x600" /></p>
+    <h4>Guadalajara</h4>
+    
+    <div id="map" style="width:1000px;height:450px;"></div>
  
     <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
-    <a href="#" class="close-reveal-modal">&times;</a>
+    
   </div>
- 
-<script>
+
+  <script>
   document.write('<script src=js/vendor/' +
   ('__proto__' in {} ? 'zepto' : 'jquery') +
   '.js><\/script>')
   </script>
-<script src="js/foundation.min.js"></script>
-<script>
+  <script src="js/foundation.min.js"></script>
+  <script>
     $(document).foundation();
   </script>
-<!-- End Footer -->
+
+</body>
+</html>
